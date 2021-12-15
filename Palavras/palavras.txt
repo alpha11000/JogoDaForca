@@ -3,18 +3,47 @@ arara
 macaco
 papagaio
 cobra
+abelha
+abutre
+aguia
+alce
+alpaca
+anaconda
+anchova
+andorinha
+anta
+aranha
+arara
+asno
+atum
+avestruz
+jabuti
+tartaruga
+bufalo
+gato
+cachorro
 
 #Empresas
 apple
 alphabet
 meta
 ford
+samsung
+xiaomi
+acer
 
 #Frutas
 banana
 melancia
 uva
 cacau
+caju
+abacaxi
+manga
+abacate
+pera
+damasco
+amora
 
 #Objetos
 cadeira
