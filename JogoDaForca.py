@@ -24,6 +24,7 @@ os.system('cls')
 print(''.join(palavraOculta))
 
 while True:
+    print('Tema: ', temas[escolha])
     print('tentativas = ', tentativas)
     letra = input('letra:\n')
     letraPos = -1
