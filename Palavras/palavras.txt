@@ -32,6 +32,19 @@ samsung
 xiaomi
 acer
 mallory
+microsoft
+asus
+saraiva
+toyota
+nestle
+natura
+avon
+submarino
+havaianas
+danone
+unilever
+yahoo
+adidas
 
 #Frutas
 banana
@@ -45,6 +58,12 @@ abacate
 pera
 damasco
 amora
+morango
+goiaba
+acerola
+laranja
+cereja
+jabuticaba
 
 #Objetos
 cadeira
@@ -52,4 +71,22 @@ liquidificador
 mesa
 sanduicheira
 celular
-
+computador
+espelho
+isqueiro
+carregador
+escova
+garrafa
+vassoura
+quadro
+teclado
+roteador
+pendrive
+alfinete
+parafuso
+prego
+adesivo
+sabonete
+almofada
+tapete
+geladeira

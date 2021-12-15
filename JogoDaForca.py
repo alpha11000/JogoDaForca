@@ -8,10 +8,18 @@ os.system('cls')
 print('Os temas disponíveis são:')
 
 [print(i, '- ', temas[i]) for i in range(len(temas))]
+print(len(temas), '- ', 'Tema aleatório')
 
 escolha = int(input('Digite sua escolha:\n'))
 
-palavra = sortearPalavra(temas[escolha])
+
+if(escolha == len(temas)):
+    print('------------')
+    tema = choice(temas)
+else:
+    tema = temas[escolha]
+
+palavra = sortearPalavra(tema)
 
 
 letrasEscolhidas = []
@@ -25,7 +33,7 @@ while True:
     erros = tentativasTotais - tentativasRestantes
 
     os.system('cls')
-    print('Tema: ', temas[escolha])
+    print('Tema: ', tema)
     print('Letras usadas: ', ''.join(letrasEscolhidas))
     print(desenharForca(erros))
     print(''.join(palavraOculta))
@@ -33,6 +41,10 @@ while True:
     if(tentativasRestantes <= 0):
         print('Você perdeu :(')
         print('A palavra certa era: ', palavra)
+        break
+
+    if(''.join(palavraOculta) == palavra):
+        print('Você ganhou :D')
         break
 
     letra = input('Digite uma letra: ')
@@ -54,7 +66,4 @@ while True:
     if(not letraCerta):
         tentativasRestantes -= 1
 
-    if(''.join(palavraOculta) == palavra):
-        print('Você ganhou :D')
-        break
 
