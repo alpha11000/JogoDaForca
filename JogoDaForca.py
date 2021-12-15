@@ -1,4 +1,5 @@
 from GerenciadorPalavras import *
+from Forca import *
 import os
 
 temas = temasDisponiveis()
@@ -18,14 +19,18 @@ palavra = sortearPalavra(temas[escolha])
 palavraOculta = ['_ ' for i in range(len(palavra))]
 #palavraOculta = ''.join(palavraOcultaList)
 print(palavraOculta)
-tentativas = 6
+tentativasTotais = 7
+tentativasRestantes = tentativasTotais
 
 os.system('cls')
 print(''.join(palavraOculta))
 
 while True:
+    erros = tentativasTotais - tentativasRestantes
+    print(desenharForca(erros))
+
     print('Tema: ', temas[escolha])
-    print('tentativas = ', tentativas)
+    print('tentativas = ', tentativasRestantes)
     letra = input('letra:\n')
     letraPos = -1
     letraCerta = False
@@ -42,7 +47,7 @@ while True:
         palavraOculta[letraPos] = letra
 
     if(not letraCerta):
-        tentativas -= 1
+        tentativasRestantes -= 1
         print('Você errou')
 
 
@@ -53,7 +58,7 @@ while True:
         print('Você ganhou :D')
         break
 
-    if(tentativas <= 0):
+    if(tentativasRestantes <= 0):
         print('Você perdeu :(')
         print('A palavra certa era: ', palavra)
         break
