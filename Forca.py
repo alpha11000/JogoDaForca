@@ -4,7 +4,6 @@ def desenharForca(erros):
     partesAtuais = ['' for _ in range(len(partes))]
     
     [partesAtuais.__setitem__(i, partes[i]) for i in range(erros)]
-    print(partesAtuais)
 
     desenhoForca = ''
     desenhoForca += '_____\n'
